@@ -48,3 +48,82 @@ Notre API permet de mettre un système de notation et de commentaires sur diffé
   ]
 }
 ```
+
+```
+// GET /Avis/user/{id_user} 
+
+{
+  "avis": [
+    {
+      "id": 4,
+      "content": "Service client correcte.",
+      "note": 3
+    },
+    {
+      "id": 5,
+      "content": "Produit excellent.",
+      "note": 5
+    }
+  ]
+}
+```
+
+```
+// GET /avis/{id}
+
+{
+  "id": 5,
+  "content": "Le produit est parfait et la livraison était très rapide.",
+  "note": 5,
+  "id_user": 6
+}
+```
+
+```
+// POST /Avis/
+
+// Demande : "HEADER" : Token
+
+{
+  "content": "Service décevant",
+  "note": 2
+  "num_commande": "EZADIJOKIDA015"
+} 
+
+// Réponse Body :
+{
+  "id": 6,
+  "content": "Service catastrophique le personnel était désagréable.",
+  "note": 1
+}
+```
+
+```
+// PUT /avis/{id}
+
+// Demande : "HEADER" : Token
+
+{
+  "content": "Nouvelle description",
+  "note": 3
+} 
+
+// Réponse Body :
+{
+  "id": 7,
+  "titre": "Nouveau titre",
+  "description": "Nouvelle description",
+  "note": 3
+}
+```
+
+```
+// DELETE /avis/{id}
+
+// Demande : "HEADER" : Token
+
+// Réponse :
+{
+  "message": "L'avis avec l'id 7 a été supprimé avec succès."
+}
+```
