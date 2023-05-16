@@ -18,7 +18,4 @@ public class Note {
     @Column(name = "note")
     private Float note;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name="user_id", referencedColumnName = "id")
-    private User user;
 }
