@@ -20,3 +20,31 @@ Notre API permet de mettre un système de notation et de commentaires sur diffé
 - Clonez ce projet avec commande : `git clone https://github.com/Althail/Microservice-notes.git.`
 - Ouvrez le dossier cloné sur votre IDE préféré de Java.
 - Vous pouvez regarder le `pom.xml` pour voir les packages nécessaires sur ce projet.
+
+## Exemple d'usage 
+
+```
+// GET /Avis/ :
+{
+  "avis": [
+    {
+      "id": 1,
+      "comment": "Je suis plutôt satisfait du produit.",
+      "id_user": 1
+      "note": 4,   
+    },
+    {
+      "id": 2,
+      "comment": "Le produit est plutôt décevant.",
+      "id_user": 2
+      "note": 2,
+    },
+    {
+      "id": 3,
+      "comment": "Le produit est immonde et ne respecte pas du tout ce que j'ai acheté.",
+      "id_user": 3
+      "note": 1, 
+    }
+  ]
+}
+```
