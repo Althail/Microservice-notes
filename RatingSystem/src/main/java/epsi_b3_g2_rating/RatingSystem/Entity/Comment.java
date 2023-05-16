@@ -17,4 +17,8 @@ public class Comment {
     @Column(name = "comment")
     private String comment;
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name="user_id", referencedColumnName = "id")
+    private User user;
+
 }
