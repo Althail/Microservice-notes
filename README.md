@@ -10,3 +10,13 @@ Notre API permet de mettre un système de notation et de commentaires sur diffé
 - Les utilisateurs peuvent attribuer une note aux vendeurs sur une échelle de 1 à 5 étoiles. (⭐ ~ ⭐⭐⭐⭐⭐)
 - Les utilisateurs peuvent laisser des commentaires pour fournir des retours supplémentaires sur leur expérience. (💬)
 - Une documentation détaillée et des exemples de code facilitent l'intégration. (📚)
+
+## Pré-requis
+- Java 17 au minimum
+
+
+## Installation et Démarrage
+
+- Clonez ce projet avec commande : `git clone https://github.com/Althail/Microservice-notes.git.`
+- Ouvrez le dossier cloné sur votre IDE préféré de Java.
+- Vous pouvez regarder le `pom.xml` pour voir les packages nécessaires sur ce projet.
